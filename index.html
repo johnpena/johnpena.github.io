@@ -6,22 +6,16 @@
         <!-- google.com/fonts -->
         <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <style>
+
+            html {
+                display: table;
+                margin: auto;
+            }
+
             body {
+                display: table-cell;
+                vertical-align: middle;
                 font-family: 'Raleway', sans-serif;
-            }
-            .content {
-                margin: 100px auto;
-                width: 480px;
-            }
-
-            h1#penapalooza {
-                margin: 20px 0;
-                width: 480px;
-                text-align: center;
-            }
-
-            #about {
-                margin: 20px 0;
             }
 
             a {
@@ -32,19 +26,42 @@
                 text-decoration: line-through;
             }
 
-            @media screen and (max-device-width: 480px) {
-                .content {
-                    margin: 0 auto;
-                    width: 480px;
+
+            #content {
+                margin: 10% auto;
+                padding: 1%;
+                min-width: 420px;
+            }
+
+
+            #about {
+                margin: 20px 0;
+            }
+
+            #title {
+                text-align: center;
+            }
+
+
+            /* iPads (portrait and landscape) ----------- */
+            @media only screen 
+            and (min-device-width : 768px) {
+                #content {
+                    width: 70%
                 }
             }
+
         </style>
     </head>
 
     <body>
-        <div class="content">
-            <h1 id="penapalooza">Penapalooza</h1>
-            <img src="flourish.gif" />
+        <div id="content">
+
+            <div id="title">
+                <h1>Penapalooza</h1>
+                <img src="flourish.gif" />
+            </div>
+
 
             <h3> About </h3>
             <div id="about">
