@@ -5,7 +5,12 @@
         <title>Penapalooza</title>
         <!-- google.com/fonts -->
         <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link href='bootstrap.min.css' rel='stylesheet' type='text/css'>
         <style>
+            html {
+                position: relative;
+                min-height: 100%;
+            }
 
             body {
                 vertical-align: middle;
@@ -16,32 +21,31 @@
                 text-decoration: none;
             }
 
+            .centered {
+                text-align: center;
+                margin: 0 auto;
+                width: auto;
+                max-width: 480px;
+            }
+
             .strike {
                 text-decoration: line-through;
             }
 
-            #title {
-                text-align: center;
+            .container {
+                width: auto;
+                max-width: 680px;
+                padding: 0 15px;
             }
-
-            #content {
-                margin: 0 auto;
-                max-width: 560px;
-            }
-
-
         </style>
     </head>
 
     <body>
-        <div id="content">
-
-            <div id="title">
+        <div class="container">
+            <div class="centered">
                 <h1>Penapalooza</h1>
-                <img src="flourish.gif" />
+                <img class="img-responsive" src="flourish.gif"/>
             </div>
-
-
             <h3> About </h3>
             <div id="about">
                 I currently live in San Francisco where I work for 
