@@ -2,6 +2,8 @@ require 'goodreads'
 require 'yaml'
 require 'json'
 require 'pry'
+require 'strava/api/v3'
+require 'colorize'
 
 
 def get_api_keys()
@@ -26,7 +28,7 @@ def get_goodreads_books(api_key, api_secret, user_id)
         unless book.read_at.nil?
             if book.read_at.include? "2014"
                 entry = {
-                    :date_read => book.read_at,
+                    :date => book.read_at,
                     :title => book.book.title,
                     :author => book.book.authors.author.name,
                     :link => book.link
@@ -34,14 +36,29 @@ def get_goodreads_books(api_key, api_secret, user_id)
                 entry
             end
         end
-    end
+    end.compact
 
-    read_books.compact
+    read_books
 end
 
 
-def get_strava_runs()
-    []
+def get_strava_runs(access_token)
+
+    strava = Strava::Api::V3::Client.new(:access_token => access_token)
+
+    runs = strava.list_athlete_activities.map do |activity|
+        if activity["type"] == "Run" and activity["start_date_local"].include? "2014"
+            run = {
+                :distance => activity["distance"] * 0.000621371, # (meters to miles)
+                :date => activity["start_date_local"],
+                :total_time => activity["elapsed_time"] / 60,
+                :link => "http://www.strava.com/" + activity["id"].to_s
+            }
+            run
+        end
+    end
+
+    runs.compact
 end
 
 
@@ -62,28 +79,32 @@ task :generate_json do
 
     out = {}
 
-    puts "Reading ~/.apikeys"
+    print "Reading ~/.apikeys... ".blue
     secrets = get_api_keys
+    puts "Done".green
 
-    puts "Scraping goodreads"
+    print "Scraping goodreads... ".blue
     out[:books] = get_goodreads_books(
         secrets['goodreads']['api_key'],
         secrets['goodreads']['secret_key'],
         secrets['goodreads']['user_id'],
     )
+    puts "Done".green
 
-    puts "Scraping strava"
-    out[:runs] = get_strava_runs
+    print "Scraping strava... ".blue
+    out[:runs] = get_strava_runs(secrets['strava']['access_token'])
+    puts "Done".green
 
-    puts "Scraping workouts spreadsheet"
+    print "Scraping workouts spreadsheet... ".blue
     out[:workouts] = get_workouts
+    puts "Done".green
 
-    puts "Writing out to 2015.json"
-    outfile = Dir.pwd + "/2015.json"
-    puts outfile
+    outfile = Dir.pwd + "/2014.json"
+    print "Writing out to #{outfile}... ".blue
     File.delete(outfile) if File.exist?(outfile)
     File.open(outfile, "w") do |f|
         f.write(out.to_json)
     end
+    puts "Done".green
 
 end
