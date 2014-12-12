@@ -1,0 +1,30 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    vertical-align: middle;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.centered {
+    text-align: center;
+    margin: 0 auto;
+    width: auto;
+    max-width: 480px;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.container {
+    width: auto;
+    max-width: 660px;
+    padding: 0 15px;
+}

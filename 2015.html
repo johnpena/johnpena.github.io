@@ -5,38 +5,7 @@
         <!-- google.com/fonts -->
         <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <link href='static/vendor/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
-        <style>
-            html {
-                position: relative;
-                min-height: 100%;
-            }
-
-            body {
-                vertical-align: middle;
-                font-family: 'Raleway', sans-serif;
-            }
-
-            a {
-                text-decoration: none;
-            }
-
-            .centered {
-                text-align: center;
-                margin: 0 auto;
-                width: auto;
-                max-width: 480px;
-            }
-
-            .strike {
-                text-decoration: line-through;
-            }
-
-            .container {
-                width: auto;
-                max-width: 680px;
-                padding: 0 15px;
-            }
-        </style>
+        <link href='static/style.css' rel='stylesheet' type='text/css'>
     </head>
 
     <body>
@@ -45,6 +14,9 @@
                 <h1>Penapalooza</h1>
                 <img class="img-responsive" src="static/flourish.gif"/>
             </div>
+
+            <hr>
+
             <div class="row">
                 <h3> 2015 </h3>
                 <p> 
@@ -60,24 +32,32 @@
                 </p>
 
                 <p>
-                    If you're interested, <a href="">here</a> is the code that I'm 
-                    using to generate the charts in this page, and <a href="">here</a>
+                    If you're interested,
+                    <a href="https://github.com/johnpena/johnpena.github.io/blob/master/static/2015.js">here</a> 
+                    is the code that I'm using to generate the lists and charts in this page, and
+                    <a href="https://github.com/johnpena/johnpena.github.io/blob/master/Rakefile">here</a>
                     is the script I'm using to scrape all of my data.
                 </p>
 
             </div>
+
+            <hr>
 
             <div class="row">
                 <h3> This year's goals </h3>
 
                 <h4> 1. Run 400 miles </h4>
                 <p> 
-                    lorem ipsum
+                    Starting off my first goal by setting the bar low. This
+                    comes out to a 2.5 mile run 3 times a week. This is not overwhelming
+                    and I can still probably finish it even if I get off to a bad start.
                 </p>
 
                 <h4> 2. Go to the gym 150 times </h4>
                 <p> 
-                    lorem ipsum
+                    I like the 3 times a week rule. This, along with the running,
+                    gives me something active to do almost every day of the week with one
+                    day of rest. 
                 </p>
 
                 <h4> 3. Go to yoga 50 times </h4>
@@ -93,9 +73,19 @@
                     this, but I was definitely rushing to hit my goal. This year
                     I'm setting a lower bar so that I actually enjoy what I'm reading.
                 </p>
+            </div>
 
+            <hr>
+
+            <div class="row" id="progress">
             </div>
 
         </div>
     </body>
+
+    <script src="static/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="static/vendor/chartjs/Chart.js"></script>
+    <script src="static/vendor/react/react.js"></script>
+    <script src="static/vendor/react/JSXTransformer.js"></script>
+    <script src="static/2015.js" type="text/jsx"></script>
 </html>
