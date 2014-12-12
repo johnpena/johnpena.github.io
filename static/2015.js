@@ -83,6 +83,37 @@
     // meta-things
     /////////////////
     var BookList = React.createClass({
+
+        componentDidMount: function () {
+            var booksRead = this.props.data.length;
+            var booksLeft = booksRead > 25 ? 0 : 25 - booksRead;
+            debugger
+            var data = [
+                {
+                    value: booksRead,
+                    color:"blue",
+                    highlight: "#FF5A5E",
+                    label: "Books read"
+                },
+                {
+                    value: booksLeft,
+                    color: "green",
+                    highlight: "#5AD3D1",
+                    label: "Books left to read"
+                },
+                {
+                    value: 40,
+                    color: "red",
+                    highlight: "#5AD3D1",
+                    label: "Books left to read"
+                },
+
+            ]
+            var context = document.getElementById("bookListChart").getContext("2d");
+            var bookListChart = new Chart(context).Pie(data, {});
+
+        },
+
         render: function () {
             var bookNodes = this.props.data.map(function (book) {
                 return (
@@ -97,6 +128,7 @@
                     <div className="col-sm-3">
                         <h4> Books </h4>
                         ({bookNodes.length} of 25)
+                        <canvas id="bookListChart" width="150" height="150"></canvas>
                     </div>
                     <div className="col-sm-9" style={topMarginStyle}>
                         {bookNodes}
