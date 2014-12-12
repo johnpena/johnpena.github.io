@@ -87,7 +87,6 @@
         componentDidMount: function () {
             var booksRead = this.props.data.length;
             var booksLeft = booksRead > 25 ? 0 : 25 - booksRead;
-            debugger
             var data = [
                 {
                     value: booksRead,
