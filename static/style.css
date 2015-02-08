@@ -5,7 +5,8 @@ html {
 
 body {
     vertical-align: middle;
-    font-family: 'Raleway', sans-serif;
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: 'FiraSans-Extra';
 }
 
 a {
