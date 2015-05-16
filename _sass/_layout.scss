@@ -2,20 +2,22 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
+
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .site-title {
-    font-size: 26px;
-    line-height: 56px;
+    font-size: 40px;
+    line-height: 66px;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
 
     &,
     &:visited {
@@ -24,7 +26,6 @@
 }
 
 .site-nav {
-    float: right;
     line-height: 56px;
 
     .menu-icon {
