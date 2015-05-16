@@ -1,48 +1,23 @@
-<html>
+---
+layout: default
+---
 
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Penapalooza</title>
-        <!-- google.com/fonts -->
-        <!--<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>-->
-        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
-        <link href='static/vendor/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
-        <link href='static/style.css' rel='stylesheet' type='text/css'>
-    </head>
+<div class="home">
 
-    <body>
-        <div class="container">
+  <h1 class="page-heading">Posts</h1>
 
-            <div class="centered">
-                <h1>John Pe&ntilde;a</h1>
-                <img class="img-responsive" src="static/flourish.gif"/>
-            </div>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-            <div class="row">
-                <h3> About </h3>
-                <p>
-                    I'm the bassist and rhythm guitarist for the band Mr. This. 
-                    In my free time I work as a programmer for 
-                    <a href="http://www.baselinev.com" class="strike">Baseline Ventures</a> 
-                    <a href="http://mopub.com" class="strike">MoPub </a>
-                    <a href="http://about.twitter.com">Twitter</a>. 
-                    I'm not available for hire.
-                </p>
-            </div>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-           
-
-
-            <div class="row">
-                <h3> Elsewhere </h3>
-                <a target="_blank" href="http://github.com/johnpena">github</a>
-                <a target="_blank" href="http://twitter.com/pena">twitter</a>
-                <a target="_blank" href="http://www.last.fm/user/streblooo">last.fm</a>
-                <a target="_blank" href="http://www.goodreads.com/user/show/1353905-john-pena">goodreads</a>
-            </div>
-
-            <h3>
-        </div>
-    </body>
-</html>
+</div>
