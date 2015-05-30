@@ -6,9 +6,64 @@
 </description>
     <link>http://penapalooza.com/</link>
     <atom:link href="http://penapalooza.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 May 2015 19:03:47 -0700</pubDate>
-    <lastBuildDate>Fri, 15 May 2015 19:03:47 -0700</lastBuildDate>
+    <pubDate>Sat, 30 May 2015 15:11:38 -0700</pubDate>
+    <lastBuildDate>Sat, 30 May 2015 15:11:38 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Saturday Five, May 30 2015</title>
+        <description>&lt;p&gt;A lot of my favorite blogs will occasionally post a recap of articles/stories
+they’ve read recently and found intriguing. I like that idea, so I’m going to start doing this here.
+Mostly as future notes to self, but maybe someone else will find them interesting too.
+I’m going to start by posting the five best things I read over the last week.&lt;/p&gt;
+
+&lt;p&gt;Without further ado:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The &lt;a href=&quot;http://all-things-andy-gavin.com/2011/02/02/making-crash-bandicoot-part-1/&quot;&gt;Making Crash Bandicoot&lt;/a&gt;
+series by Andy Gavin, co-founder of Naughty Dog.  I love reading developers’
+journals about their projects, especially big ones like this that take you
+through the scary early days and all the little decisions that added up into
+something great. This one is a pretty long read (a 10 part story, each part
+takes 5-10 minutes to read) but touches on some really interesting stuff –
+the original ideas for a 3D platform game, how they negotiated with
+Sony/Universal Studios, the in-house lisp dialect they made for the game,
+plus lots of other gritty technical details. &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://blog.jeremyrwelch.com/tesla-is-a-battery-company&quot;&gt;Tesla is a Battery Company&lt;/a&gt; 
+by my friend Jeremy Welch. Not only a great perspective on Tesla’s long term
+game plan, but a glimpse into the United States’ “distributed energy future”.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://mobile.nytimes.com/2015/05/12/upshot/more-consensus-on-coffees-benefits-than-you-might-think.html?_r=1&quot;&gt;More Consensus on Coffee’s Benefits Than You Might Think&lt;/a&gt;
+on the New York Times’ TheUpshot blog. I don’t need an excuse to drink more
+coffee, but here it is anyway.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://medium.com/thelist/what-s-one-thing-you-ve-learned-at-harvard-business-school-that-blew-your-mind-fdea346a0422&quot;&gt;“What’s one thing you’ve learned at Harvard Business School that blew your mind?”&lt;/a&gt;
+by Ellen Chisa on Medium. Ellen goes through each of the classes she took
+while getting an MBA at Harvard Business School. Lessons learned +
+recommended case studies. Reading this made me want to get an MBA.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://mcfunley.com/choose-boring-technology&quot;&gt;Choose Boring Technology&lt;/a&gt;
+by Dan McKinley, an engineer at Stripe, on why you should choose trusted (ie boring)
+technologies when building a business. &lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, yeah. See you next Saturday. &lt;/p&gt;
+</description>
+        <pubDate>Sat, 30 May 2015 04:53:36 -0700</pubDate>
+        <link>http://penapalooza.com/sat5/2015/05/30/saturday-five.html</link>
+        <guid isPermaLink="true">http://penapalooza.com/sat5/2015/05/30/saturday-five.html</guid>
+        
+        
+        <category>sat5</category>
+        
+      </item>
     
       <item>
         <title>Hello world</title>
