@@ -1,16 +1,10 @@
 ---
 layout: post
-title: "Saturday Five, May 30 2015"
+title: "A couple links"
 date: 2015-05-30 11:53:36
-categories: sat5
 ---
 
-A lot of my favorite blogs will occasionally post a recap of articles/stories
-they've read recently and found intriguing. I like that idea, so I'm going to start doing this here.
-Mostly as future notes to self, but maybe someone else will find them interesting too.
-I'm going to start by posting the five best things I read over the last week.
-
-Without further ado:
+A couple great reads I've come across recently:
 
 * The [Making Crash Bandicoot](http://all-things-andy-gavin.com/2011/02/02/making-crash-bandicoot-part-1/)
   series by Andy Gavin, co-founder of Naughty Dog.  I love reading developers'
@@ -39,4 +33,3 @@ Without further ado:
   by Dan McKinley, an engineer at Stripe, on why you should choose trusted (ie boring)
   technologies when building a business. 
 
-So, yeah. See you next Saturday. 
