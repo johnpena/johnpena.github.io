@@ -1,7 +1,18 @@
-<!DOCTYPE html><html lang="en"><head><link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css"><link href="/style.css" rel="stylesheet" type="text/css"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Peñapalooza</title></head><body><header><h1>Peñapalooza</h1></header><img src="/flourish.gif" class="site-flourish"><p>My name is John Peña. I'm known for being one of the genius multi-instrumentalists behind the band Mr. This. In my spare time I work as a programmer. I'm not available for hire to other bands. Please send complaints <a href="http://www.noreallyidocare.com/">here</a>.</p><h3>Links</h3><p><ul><li><a href="http://idlewords.com/talks/internet_with_a_human_face.htm">The Internet with a Human Face</a></li><li><a href="http://www.stilldrinking.org/programming-sucks">Programming Sucks</a></li><li><a href="https://www.youtube.com/watch?v=LiQa8pIVPjI">Those Damn Blue Collar Tweakers at Woodstock '94</a></li><li><a href="https://github.com/id-Software/DOOM">The source code for Doom</a></li><li><a href="https://www.youtube.com/watch?v=RXJKdh1KZ0w">Rockwell Retro Encabulator</a></li><li><a href="http://tomhanksrocket.ytmnd.com/">Tom Hanks Rocket</a></li><li><a href="https://nplusonemag.com/issue-25/on-the-fringe/uncanny-valley/">Uncanny Valley</a></li></ul></p></body><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+---
+layout: default
+---
 
-ga('create', 'UA-63619413-1', 'auto');
-ga('send', 'pageview');</script></html>
+<div class="home">
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+
+      <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          »
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
