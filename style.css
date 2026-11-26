@@ -1,6 +1,5 @@
 :root {
-    --bg: #ffffff;
-    --panel: #e8e9ed;
+    --bg: #e8e9ed;
     --ink: #15171b;
     --muted: #666c76;
     --faint: #8b919b;
@@ -10,7 +9,6 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --bg: #0e0f12;
-        --panel: #17191d;
         --ink: #eceef1;
         --muted: #9aa0aa;
         --faint: #6b717b;
@@ -34,12 +32,11 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Left panel + dot field. The canvas spans the whole viewport so dots can
-   spill past the panel edge into the white side. */
+/* Dot field. The canvas spans the whole viewport so dots can
+   drift past the left half into the text side. */
 .art {
     position: fixed;
     inset: 0;
-    background: linear-gradient(to right, var(--panel) 50%, var(--bg) 50%);
 }
 
 .art canvas {
@@ -138,7 +135,6 @@ footer {
     .art {
         position: relative;
         height: 44vh;
-        background: var(--panel);
     }
 
     .copy {
