@@ -92,9 +92,7 @@ p {
 }
 
 .links a {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    display: inline-block;
     padding: 5px 0;
     color: var(--ink);
     font-size: 14px;
@@ -105,11 +103,6 @@ p {
 .links a:focus-visible .title {
     text-decoration: underline;
     text-underline-offset: 3px;
-}
-
-.links .meta {
-    color: var(--faint);
-    font-size: 12px;
 }
 
 footer {
